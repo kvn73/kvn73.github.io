@@ -1,0 +1,534 @@
+@charset "UTF-8";
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%; }
+
+/*PC表示のみ*/
+.pc-only {
+  display: none; }
+
+/*SP表示のみ*/
+html {
+  font-size: 62.5%; }
+
+body {
+  padding: 10px;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+  line-height: 1.7; }
+
+/*　枠　*/
+html:before,
+html:after,
+body:before,
+body:after {
+  display: block;
+  z-index: 1;
+  position: fixed;
+  background: #000;
+  content: ""; }
+
+/* 上 */
+html:before {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 10px; }
+
+/* 右 */
+html:after {
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100vh; }
+
+/* 下 */
+body:before {
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 10px; }
+
+/* 左 */
+body:after {
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100vh; }
+
+/*各セクションの余白*/
+.sec-block {
+  padding: 40px 0; }
+
+/* メール入力フォーム */
+.common-form-1 {
+  width: 100%;
+  padding: .5rem 0; }
+
+.common-form-1 .common-input {
+  width: 90%;
+  height: auto;
+  padding: 7px;
+  border: solid 1px #000;
+  border-radius: 10px;
+  background: #fff;
+  color: #000;
+  font-size: 1.2rem; }
+
+.common-form-1 .common-input::-webkit-input-placeholder {
+  text-align: center; }
+
+.common-form-1 .common-input:-ms-input-placeholder {
+  text-align: center; }
+
+.common-form-1 .common-input::-ms-input-placeholder {
+  text-align: center; }
+
+.common-form-1 .common-input::placeholder {
+  text-align: center; }
+
+.common-form-1 .common-input-2 {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  border: solid 1px #000;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 1.4rem; }
+
+.common-form-1 .common-input-2::-webkit-input-placeholder {
+  text-align: center; }
+
+.common-form-1 .common-input-2:-ms-input-placeholder {
+  text-align: center; }
+
+.common-form-1 .common-input-2::-ms-input-placeholder {
+  text-align: center; }
+
+.common-form-1 .common-input-2::placeholder {
+  text-align: center; }
+
+.common-form-1 .button-style {
+  -webkit-transition: all .3s;
+  padding-top: .5rem;
+  text-align: left;
+  transition: all .3s; }
+
+.common-form-1 .button-style:hover {
+  cursor: pointer;
+  opacity: .7; }
+
+.common-form-1 .button-style img {
+  width: 90%; }
+
+.common-form-1 .button-style-2 {
+  -webkit-transition: all .3s;
+  padding-top: 1rem;
+  text-align: center;
+  transition: all .3s; }
+
+.common-form-1 .button-style-2:hover {
+  cursor: pointer;
+  opacity: .7; }
+
+.common-form-1 .button-style-2 img {
+  width: 100%; }
+
+.common-form-2 {
+  padding: 1rem 0; }
+
+.common-form-2 .common-input {
+  width: 90%;
+  height: auto;
+  padding: 7px;
+  border: solid 1px #000;
+  border-radius: 10px;
+  background: #fff;
+  color: #000;
+  font-size: 1.2rem; }
+
+.common-form-2 .common-input::-webkit-input-placeholder {
+  text-align: center; }
+
+.common-form-2 .common-input:-ms-input-placeholder {
+  text-align: center; }
+
+.common-form-2 .common-input::-ms-input-placeholder {
+  text-align: center; }
+
+.common-form-2 .common-input::placeholder {
+  text-align: center; }
+
+.common-form-2 .common-input-2 {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  border: solid 1px #000;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 1.4rem; }
+
+.common-form-2 .common-input-2::-webkit-input-placeholder {
+  text-align: center; }
+
+.common-form-2 .common-input-2:-ms-input-placeholder {
+  text-align: center; }
+
+.common-form-2 .common-input-2::-ms-input-placeholder {
+  text-align: center; }
+
+.common-form-2 .common-input-2::placeholder {
+  text-align: center; }
+
+.common-form-2 .button-style {
+  -webkit-transition: all .3s;
+  padding-top: .5rem;
+  text-align: left;
+  transition: all .3s; }
+
+.common-form-2 .button-style:hover {
+  cursor: pointer;
+  opacity: .7; }
+
+.common-form-2 .button-style img {
+  width: 90%; }
+
+.common-form-2 .button-style-2 {
+  -webkit-transition: all .3s;
+  padding-top: 1rem;
+  text-align: center;
+  transition: all .3s; }
+
+.common-form-2 .button-style-2:hover {
+  cursor: pointer;
+  opacity: .7; }
+
+.common-form-2 .button-style-2 img {
+  width: 100%; }
+
+/*プライバシーポリシー*/
+.privacy-policy-1 {
+  font-size: .7rem;
+  letter-spacing: 0;
+  line-height: 1.4;
+  text-align: left; }
+
+.privacy-policy-2 {
+  font-size: .7rem;
+  letter-spacing: 0;
+  line-height: 1.5;
+  text-align: left; }
+
+.sec1 {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  height: 0;
+  min-height: 280px;
+  padding-top: 62.3%;
+  overflow: hidden;
+  background-image: url(../dest/img/top-pc.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff; }
+
+.sec1 .sec1-content {
+  position: absolute;
+  top: 35%;
+  width: 65%;
+  font-size: 1.2rem; }
+
+.sec1 .sec1-content .sec1-sub {
+  width: 100%; }
+
+.sec1 .sec1-content .sec1-sub h3 {
+  font-size: 1.5rem; }
+
+.sec1 .sec1-content .sec1-text {
+  padding-top: .5rem;
+  font-size: 1.25rem; }
+
+.sec1 .sec1-content .sec1-text p {
+  margin-bottom: 0; }
+
+.sec2 {
+  background-color: #fff;
+  text-align: center; }
+
+.sec2 .sec-title {
+  color: #777777;
+  font-size: 1.5rem; }
+
+.sec2 .look {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  font-size: 1.4rem; }
+
+.sec2 .video {
+  width: 100%;
+  height: auto;
+  padding-bottom: 2.5rem; }
+
+.sec2 .sec2-sub {
+  padding-bottom: 2rem;
+  color: #777777;
+  font-size: 1.5rem; }
+
+.sec3 {
+  position: relative;
+  width: 100%;
+  background-image: url("../dest/img/trading.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff; }
+
+.sec3 .sec3-content .sec3-title {
+  font-size: 1.75rem; }
+
+.sec3 .sec3-content .sec-3-text {
+  padding: 2.5rem 0; }
+
+.sec3 .sec3-content .imp-message {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center; }
+
+.sec3 .sec3-content .imp-message .kakko-left {
+  width: 15%;
+  height: 10%;
+  padding-top: 11rem; }
+
+.sec3 .sec3-content .imp-message .okashi {
+  padding-top: 15%;
+  font-size: 1.8rem;
+  text-align: center; }
+
+.sec3 .sec3-content .imp-message .kakko-right {
+  width: 15%;
+  height: 10%;
+  padding-bottom: 11rem; }
+
+.sec4 {
+  text-align: center; }
+
+.sec4 .sec-4-text {
+  color: #707070;
+  font-size: 1.5rem;
+  line-height: 1.2; }
+
+footer {
+  padding-bottom: 1px;
+  background-color: #000;
+  text-align: center; }
+
+footer .footer-text {
+  color: #fff;
+  font-size: 1rem; }
+
+footer .footer-text .footer-policy {
+  color: #fff;
+  text-decoration: none; }
+
+@media screen and (min-width: 480px) {
+  .sec3 .sec3-content .imp-message .okashi {
+    padding-top: 15%;
+    font-size: 2.2rem; } }
+
+@media screen and (min-width: 480px) and (max-width: 599px) {
+  .sec3 .sec3-content .sec-3-text {
+    font-size: 1.3rem; } }
+
+@media screen and (min-width: 568px) {
+  .sec3 .sec3-content .imp-message .okashi {
+    padding-top: 15%;
+    font-size: 2.2rem; } }
+
+@media screen and (min-width: 600px) {
+  .common-form-1 {
+    width: 70%; }
+  .sec3 .sec3-content .sec3-title {
+    font-size: 1.8rem;
+    text-align: center; }
+  .sec3 .sec3-content .sec-3-text {
+    font-size: 1.5rem; } }
+
+@media screen and (min-width: 768px) {
+  .pc-only {
+    display: block; }
+  .sp-only {
+    display: none; }
+  .common-form-1 .button-style {
+    padding-top: 1rem; }
+  .common-form-1 .button-style-2 {
+    padding-top: 2rem; }
+  .common-form-2 {
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    font-size: 2rem; }
+  .common-form-2 .button-style {
+    padding-top: 1rem; }
+  .common-form-2 .button-style-2 {
+    padding-top: 2rem; }
+  .privacy-policy-1 {
+    width: 60%;
+    font-size: 1rem; }
+  .privacy-policy-2 {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1rem;
+    text-align: left; }
+  .sec2 .sec-title {
+    font-size: 3.5rem; }
+  .sec2 .look {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 2rem; }
+  .sec2 .video {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 7rem; }
+  .sec2 .sec2-sub {
+    padding-bottom: 2.5rem;
+    font-size: 3.5rem; }
+  .sec3 {
+    min-height: 700px; }
+  .sec3 .sec3-content {
+    width: 70%;
+    margin: 0 auto; }
+  .sec3 .sec3-content .sec3-title {
+    font-size: 2.4rem;
+    text-align: center; }
+  .sec3 .sec3-content .sec-3-text {
+    padding-top: 1.7rem;
+    font-size: 2rem; }
+  .sec4 .sec-4-text {
+    font-size: 3rem;
+    line-height: 1.5; }
+  .sec4 .sec-4-img {
+    width: 80%; }
+  footer .footer-text {
+    font-size: 1.2rem; }
+  footer .footer-text .footer-policy {
+    font-size: 1.2rem; } }
+
+@media screen and (min-width: 768px) and (max-width: 999px) {
+  .common-form-1 {
+    padding: 1rem; }
+  .common-form-1 .common-input {
+    padding: 12px;
+    font-size: 1.3rem; }
+  .common-form-1 .common-input-2 {
+    padding: 15px;
+    font-size: 1.5rem; }
+  .common-form-2 .common-input {
+    padding: 12px;
+    font-size: 1.3rem; }
+  .common-form-2 .common-input-2 {
+    padding: 15px;
+    font-size: 1.5rem; }
+  .privacy-policy-2 {
+    width: 60%; }
+  .sec1 .sec1-content {
+    top: 33%;
+    left: 15%; }
+  .sec1 .sec1-content .sec1-sub h3 {
+    font-size: 2rem; }
+  .sec1 .sec1-content .sec1-text {
+    font-size: 1.4rem; }
+  .sec1 .sec1-content .sec1-text p {
+    margin-bottom: .5rem; }
+  .sec2 .sec-title {
+    font-size: 2.5rem; } }
+
+@media screen and (min-width: 769px) {
+  .sec3 .sec3-content .imp-message .okashi {
+    padding-top: 10%;
+    font-size: 2.3rem; } }
+
+@media screen and (min-width: 786px) and (max-width: 999px) {
+  .sec3 .sec3-content .sec-3-text {
+    padding: 1.5rem 0; } }
+
+@media screen and (min-width: 1000px) {
+  .common-form-1 {
+    max-width: 60%; }
+  .common-form-1 .common-input {
+    padding: 17px;
+    font-size: 2rem; }
+  .common-form-1 .common-input-2 {
+    padding: 20px;
+    font-size: 2rem; }
+  .common-form-2 .common-input {
+    padding: 17px;
+    font-size: 2rem; }
+  .common-form-2 .common-input-2 {
+    padding: 20px;
+    font-size: 2rem; }
+  .sec1 .sec1-content {
+    top: 32%;
+    left: 15%;
+    width: 70%;
+    font-size: 1.8rem; }
+  .sec1 .sec1-content .sec1-sub h3 {
+    font-size: 3rem; }
+  .sec1 .sec1-content .sec1-text {
+    font-size: 2rem; }
+  .sec1 .sec1-content .sec1-text p {
+    margin-bottom: 1rem; }
+  .sec3 .sec3-content .imp-message .okashi {
+    font-size: 3rem; } }
+
+@media screen and (min-width: 1440px) {
+  .common-form-1 .common-input {
+    padding: 20px;
+    font-size: 3rem; }
+  .common-form-1 .common-input-2 {
+    padding: 20px;
+    font-size: 3rem; }
+  .common-form-2 .common-input {
+    padding: 20px;
+    font-size: 3rem; }
+  .common-form-2 .common-input-2 {
+    padding: 20px;
+    font-size: 3rem; } }
+
+@media screen and (min-width: 1550px) {
+  .sec1 .sec1-content {
+    top: 35%; }
+  .sec1 .sec1-content .sec1-sub h3 {
+    font-size: 6rem; }
+  .sec1 .sec1-content .sec1-text {
+    font-size: 4rem; }
+  .sec3 {
+    min-height: 800px; }
+  .sec3 .sec3-content .sec3-title {
+    font-size: 3.2rem; }
+  .sec3 .sec3-content .sec-3-text {
+    padding-top: 2.5rem;
+    font-size: 2.2rem; }
+  .sec3 .sec3-content .imp-message .okashi {
+    padding-top: 10%;
+    font-size: 3.5rem; } }
+
+@media screen and (min-width: 2000px) {
+  .sec1 {
+    height: 700px; } }
+
+/*# sourceMappingURL=../maps/style.css.map */

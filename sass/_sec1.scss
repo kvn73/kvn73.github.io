@@ -1,0 +1,110 @@
+.sec1 {
+    width: 100%;
+    height: 0;
+    min-height: 280px;
+    background-image: url(../dest/img/top-pc.png);
+    padding-top: 62.3%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    @media screen and(min-width: 2000px) {
+        height: 700px
+    }
+
+    .sec1-content {
+        font-size: 1.2rem;
+        width: 65%;
+        position: absolute;
+        top: 35%;
+
+        @media screen and(min-width: 768px) and (max-width: 999px) {
+            top: 33%;
+            left: 15%;
+        }
+
+        // @include mq(md) {
+        //     top: 40%;
+        //     left: 15%;
+        //     width: 50%;
+        //     font-size: 1.8rem;
+        // }
+
+        @media screen and(min-width: 1000px) {
+            top: 32%;
+            left: 15%;
+            width: 70%;
+            font-size: 1.8rem;
+        }
+
+        @media screen and(min-width: 1550px) {
+            top: 35%;
+        }
+
+        .sec1-sub {
+            width: 100%;
+
+            h3 {
+                font-size: 1.5rem;
+
+                @media screen and(min-width: 768px) and (max-width: 999px) {
+                    font-size: 2rem;
+                }
+
+                // @include mq(md) {
+                //     font-size: 3rem;
+                // }
+
+                @media screen and(min-width: 1000px) {
+                    font-size: 3rem;
+                }
+
+                @media screen and(min-width: 1550px) {
+                    font-size: 6rem;
+                }
+            }
+        }
+
+        .sec1-text {
+            padding-top: .5rem;
+            font-size: 1.25rem;
+
+            @media screen and(min-width: 768px) and (max-width: 999px) {
+                font-size: 1.4rem;
+            }
+
+            // @include mq(md) {
+            //     font-size: 2rem;
+            // }
+
+            @media screen and(min-width: 1000px) {
+                font-size: 2rem;
+            }
+
+            @media screen and(min-width: 1550px) {
+                font-size: 4rem;
+            }
+
+            p {
+                margin-bottom: 0;
+
+                @media screen and(min-width: 768px) and (max-width: 999px) {
+                    margin-bottom: .5rem;
+                }
+
+                // @include mq(md) {
+                //     margin-bottom: 1rem;
+                // }
+
+                @media screen and(min-width: 1000px) {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
